@@ -9,7 +9,7 @@ stock_prices = {
 
 total_investment = 0
 
-# Header sirf ek baar likho
+
 with open("result.csv", "w", newline="") as file:
     writer = csv.writer(file)
     writer.writerow(["Stock", "Quantity", "Price", "Total"])
@@ -27,7 +27,7 @@ for i in range(n):
 
         print(f"{stock_name} total: {total}")
 
-        # Append mode use karo
+       
         with open("result.csv", "a", newline="") as file:
             writer = csv.writer(file)
             writer.writerow([stock_name, quantity, price, total])
